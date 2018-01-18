@@ -32,7 +32,7 @@ describe('Blog Posts', function() {
 
 //POST tests
   it('should ad an item on POST', function() {
-    const newItem = {title: = 'TestPost', content: 'TestContent', author: 'testAuthor'};
+    const newItem = {title: 'TestPost', content: 'TestContent', author: 'testAuthor'};
     return chai.request(app)
     .post('/blog-posts')
     .send(newItem)
