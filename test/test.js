@@ -61,7 +61,7 @@ describe('Blog Posts', function() {
     })
     .then(function(res) {
       expect(res).to.have.status(200);
-      // expect(res.body).to.deep.equal(updateData);
+      expect(res.body).to.deep.equal(updateData);
     });
   });
 
